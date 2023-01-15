@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		}
+
+		.content-block {
+			width: 960px;
+			margin: 0 auto;
+			padding:40px 10px;
+			text-align: center;
+		}
+
+		header .content-block{
+			padding-top:20px;
+			padding-bottom:20px;
+			text-align: center;
+		}
+
+		header nav ul {
+			display: flex;
+			list-style: none;
+			font-weight: bold;
+			justify-content: space-between;
+		}
+
+		header .nav-border {
+			border-top: 1px solid #828282
+		}
+
+		main .content-row:first-child .content-block {
+			padding-top: 5px;
+		}
+
+		main .content-row:nth-child(even) {
+			background: #F6F6F6;
+		}
+
+		.my-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.language-select{
+			writing-mode: vertical-rl;
+			text-orientation: mixed;
+		}
+
+		.about-description{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		} 
+		
+		.about-description p:nth-child(1){
+			max-width: 480px;
+		}
+				
+		.about-description p:nth-child(2){
+			max-width: 400px;
+		}
+				
+		.about-description p:nth-child(3){
+			max-width: 340px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="content-block">
+			<ul>
+				<li>home</li>
+				<li>About</li>
+				<li>skills</li>
+				<li>Portfolio</li>
+			</ul>
+			<div class="nav-border"></div>
+		</nav>
+
+	</header>
+	<main>
+		<div class="content-row">
+			<div class="content-block">
+				<div class="my-info">
+					<h1>Denis<br>Novik</h1>
+					<p>UX | UI designer <br>
+						24 years old, Minsk</p>
+
+					<div class="language-select">RU |<b>ENG</b></div>
+
+				</div>
+				<div>
+					<img src="BSPP2266.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="content-row">
+			<div class="content-block">
+				<h2>About me</h2>
+
+				<div class="about-description">
+					<p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. </p>
+					
+					<p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy. </p>
+					
+					<p>Ready to implement excellent projects with wonderful people.</p>
+				</div>
+			</div>
+		</div>
+		<div class="content-row">
+			<div class="content-block">
+				<h2>Skills</h2>
+			</div>
+		</div>
+		<div class="content-row">
+			<div class="content-block">
+				<h2>Portfolio</h2>
+			</div>
+		</div>
+		<div class="content-row">
+			<div class="content-block">
+				<h2>Contacts</h2>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
