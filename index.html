@@ -14,8 +14,14 @@
 	@media (max-width: 767px) {
 		.portfolio_box_1,.portfolio_box_2 {
 		margin-bottom: 133px;
+		}
+		.logo_block_1 {
+		transition: all 0.3s ease 0s;
 	}
-}
+	    .header {
+		background-color: #FFFFFF;
+	}
+	}
 
     @media (max-width: 465px) {
 	    .logo {
@@ -42,163 +48,10 @@
 	}
 }
 
-    @media (max-width: 767px) {
-	.logo_block_1 {
-		transition: all 0.3s ease 0s;
-	}
-}
 
-    @media (min-width: 767px) {
-	.header {
-		background-color: #FFFFFF;
-	}
-}
-
-    @media (max-width: 767px) {
-
-	body.lock {
-		overflow: hidden;
-	}
-
-	.header.color {
-		background-color: #FFFFFF;
-	}
-
-	.menu_icon_flex {
-		transition: all 0.8s ease 0s;
-		margin-top: 68px ;
-		display:flex;
-		justify-content:flex-end;
-		padding-bottom: 20px;
-	}
-
-	.navigation_point {
-		font-size: 34px;	
-		padding: 66px 0 0 26px;
-	}
-
-	.menu_icon_flex.scroll_burger {
-		transition: all 0.8s ease 0s;
-		margin-top: 20px ;
-	}
-
-	.menu_icon {
-		z-index: 11;
-		display: block;
-		position: relative;
-		cursor: pointer;
-		min-width: 28px;
-		height: 18px;
-	}
-
-	.menu_icon span,
-	.menu_icon::before,
-	.menu_icon::after {
-		position: absolute;
-		left: 0px;
-		height: 10%;
-		width: 100%;
-		transition: all 0.3s ease 0s;
-		background-color: #000000;
-	}
-
-	.menu_icon::before,
-	.menu_icon::after {
-		content: "";
-	}
-
-	.menu_icon::before {
-		top: 0;
-	}
-	.menu_icon::after {
-		bottom: 0;
-	}
-	.menu_icon span {
-		top: 50%;
-		transform: scale(1) translate(0px, -50%);
-	}
-	.navigation_list {
-		font-size: 34px;
-		display: block;
-		position: fixed;
-	    text-align: left;
-		left: 0;
-		border-bottom: 50px;
-		padding-left: 26px;
-		overflow: auto;
-	}
-
-	.nav_5 {
-		padding-bottom: 40px;
-	}
-
-	.menu_body {
-		position: fixed;
-		top: -200%;
-		left: 0;
-		padding-top: 0;
-		width: 100%;
-		height: 100%;    
-		transition: all 0.3s ease 0s;
-		background-color: #FFFFFF;
-	}
-
-	.menu_icon.active	{
-		min-width: 30px;
-		height: 21px;
-	}
-
-	.menu_icon.active span,
-	.menu_icon.active::before,
-	.menu_icon.active::after {
-		height: 20%;
-		width: 100%;
-		transition: all 0.3s ease 0s;
-		background-color: #828282;
-	}
-
-	.menu_icon.active::before {
-		transform: rotate(45deg);
-		top: 9px;
-	}
-
-	.menu_icon.active::after {
-		transform: rotate(-45deg);
-		bottom: 9px;
-	}
-
-	.menu_icon.active span {
-		transform: rotate(45deg);
-		opacity: 0;
-	}
-
-	.menu_body.active {
-		top: 0px;
-	}	
-
-	.line_navigation {
-		margin: 0 0 65px 0;
-		opacity: 0;
-	}
-
-	.logo_block_3 {
-		opacity: 0;
-	}
-}
-
-    html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+    html, body, div, span, applet, object, h1, h2, p, 
+	footer, header, hgroup, menu, nav, output, 
+	ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -280,7 +133,8 @@ q:before, q:after {
 	width: 100%;
 	z-index: 10;
 	margin: 0 auto;
-	background-color: rgba(255, 255, 255, 0);
+	background-color:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
 }
 
     .scroll {
@@ -296,28 +150,24 @@ q:before, q:after {
     .navigation_list {
 	display:flex;
 	justify-content:space-between;
+	list-style: none;
+    margin: 0;
 }
 
-    .nav {
-	color: #828282;
-}
+    ul .navigation_point a {
+	color:#828282;
+	text-decoration: none;
+	}
 
-    .nav:hover {
-	color: #070707;
-}
-
-    .nav:active {
-	color: #070707;
-}
+	ul .navigation_point:first-child a {
+		color:#070707
+	}
 
     .navigation_point {
 	font-size: 18px;
 	line-height: 22px;
 	padding-top: 30px;
 	padding-bottom: 28px;
-}
-
-    a {
 	font-weight: 700;
     text-decoration: none;
 }
@@ -364,7 +214,13 @@ q:before, q:after {
 
     .ru {
 	color: #828282;
+	text-decoration: none;
 }
+
+    .eng {
+		color: #070707;
+		text-decoration: none;
+	}
 
     .photo {
 	margin: 40px 0px 104px 0px;
@@ -463,6 +319,10 @@ q:before, q:after {
 	margin-bottom: 166px;
 }
 
+    .portfolio1 {
+		color: #070707;
+	}
+
     .portfolio_box_3 {
 	margin: 0px 29px;
 }
@@ -475,6 +335,7 @@ q:before, q:after {
 
     .portfolio_p2 {
 	padding-bottom: 96px;
+	color: #070707;
 }
 
     .contacts {
@@ -499,6 +360,11 @@ q:before, q:after {
 	margin: 30px 0 86px 0;
 	font-weight: 700;
 	color: #FFFFFF;
+	transition: all 200ms;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
 }
 
     .button_message:hover {
@@ -510,6 +376,13 @@ q:before, q:after {
 	font-size: 14px;
 	color: #828282;
 }
+    
+    .contracts_a2 {
+	margin: 46px 0 ;
+	font-size: 14px;
+	color: #828282;
+	text-decoration: none;
+	}
 
     .contacts_icon {
 	display:flex;
@@ -518,33 +391,30 @@ q:before, q:after {
 	</style>
 </head>
 <body>
-	<div id="page-preloader"><span class="spinner"></span></div>
-	<div id="home" class="body">
+	<div id="section_1" class="body">
 		<header class="header header_1">
 			<div class="header_menu menu ">
 				<div class="menu_icon_flex">
-					<div class="menu_icon">
-						<span></span>
-					</div>
+					<div class="menu_icon"></div>
 				</div>
 				<nav class="menu_body">
 					<ul class="navigation_list">
-						<li class="navigation_point"><a class="nav" href="#home">Home</a></li>
-						<li class="navigation_point"><a class="nav" href="#about">About me</a></li>
-						<li class="navigation_point"><a class="nav" href="#skill">Skills</a></li>
-						<li class="navigation_point"><a class="nav" href="#portfolio">Portfolio</a></li>
+						<li class="navigation_point"><a href="#home">Home</a></li>
+						<li class="navigation_point"><a href="#about">About me</a></li>
+						<li class="navigation_point"><a href="#skill">Skills</a></li>
+						<li class="navigation_point"><a href="#portfolio">Portfolio</a></li>
 						<li class="navigation_point"><a data-goto=".footer"  class="nav nav_5" href="#contact">Contacts</a></li>
 					</ul>
-		</nav>
+		        </nav>
 			</div>
 		</header>
-		<section  class="home">
+		<section class="home home">
 			<hr  class="line_navigation ">
 			<div  class="logo">
-				<div class="logo_block logo_block_1"><h1>Denis<br> Novik</h1></div>
+				<div class="logo_block logo_block_1"><h1>Denis<br>Novik</h1></div>
 				<div class="logo_block logo_block_2"><p>UX | UI designer<br> 24 years old, Minsk</p></div>
-				<div class="logo_block logo_block_3"><p><span class="ru">RU</span> | ENG</p></div>
-			</div>
+				<div class="logo_block logo_block_3"><p><a class="ru" href="#">RU</a> | <a class="eng" href="#">ENG</a></p></div>
+			</div>	
 			<div class="photo">
 				<picture>
 					<source media="(max-width: 465px)" srcset="img/375.png">
@@ -579,16 +449,16 @@ q:before, q:after {
 				<div class="portfolio_section">
 					<h2 class="portfolio_heading">Portfolio</h2>
 					<div class="portfolio_box portfolio_box_1">
-						<img class="img_portfolio" src="img/portfolio_1.png" alt="">
-						<p>Online fashion store - Homepage</p>
+						<a href="#"><img class="img_portfolio" src="img/portfolio_1.png" alt=""></a>
+						<a class="portfolio1" href="#">Online fashion store - Homepage</a>
 					</div>
 					<div class="portfolio_box portfolio_box_2">
-						<img class="img_portfolio" src="img/portfolio_2.png" alt="">
-						<p>Reebok Store - Concept</p>
+						<a href="#"><img class="img_portfolio" src="img/portfolio_2.png" alt=""></a>
+						<a class="portfolio1" href="#">Reebok Store - Concept</a>
 					</div>
 					<div class="portfolio_box portfolio_box_3">
-						<img class="img_portfolio" src="img/portfolio_3.png" alt="">
-						<p class="portfolio_p2">Braun Landing Page - Concept</p>
+						<a href="#"><img class="img_portfolio" src="img/portfolio_3.png" alt=""></a>
+						<p class="portfolio_p2"><a class="portfolio1" href="#">Braun Landing Page - Concept</a></p>
 					</div>
 				</div>
 			</div>
@@ -599,12 +469,12 @@ q:before, q:after {
 				<p>Want to know more or just chat?<br>You are welcome!</p>
 				<button class="button_message">Send message</button>
 				<div class="contacts_icon">
-					<img src="img/linkedin.svg" alt="">
-					<img src="img/instagram.svg" alt="">
-					<img src="img/behance.svg" alt="">
-					<img src="img/surface.svg" alt="">
+					<a href="https://www.linkedin.com/feed/"><img src="img/linkedin.svg" alt=""></a>
+					<a href="https://www.instagram.com/"><img src="img/instagram.svg" alt=""></a>
+					<a href="https://www.behance.net/"><img src="img/behance.svg" alt=""></a>
+					<a href="https://dribbble.com/"><img src="img/surface.svg" alt=""></a>
 				</div>
-				<p class="contacts_p2">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+				<p class="contacts_p2">Like me on<br><a class="contracts_a2" href="https://www.linkedin.com/feed/">LinkedIn,</a><a class="contracts_a2" href="https://www.instagram.com/">Instagram,</a><a class="contracts_a2" href="https://www.behance.net/">Behance,</a><a class="contracts_a2" href="https://dribbble.com/">Dribble</a></p>
 			</div>
 		</footer>
 	</div>
