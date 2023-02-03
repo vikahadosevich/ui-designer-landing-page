@@ -2,6 +2,128 @@
 	box-sizing: border-box;
 }
 
+header,
+.content {
+	padding: 10px;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-row {
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 1;
+}
+
+
+.mobile-header {
+	display: none;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
+.mobile-header h1 {
+	margin: 0;
+}
+
+.svg-btn {
+	background: 0;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms;
+}
+
+
+.svg-btn:hover {
+	background-color: #dadada;
+}
+
+.svg-btn:active {
+	background-color: #cacaca;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 330px;
+	min-height: 450px;
+	height: auto;
+	background: #fff;
+	z-index: 3;
+	display: flex;
+	padding: 20px 10px 60px 30px;
+	justify-content: space-between;
+	box-shadow: 0 0 15px 3px rgb(0 0 0 / 40%);
+}
+
+.mobile-menu nav ul {
+	padding: 13px;
+}
+
+.mobile-menu .column-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: end;
+}
+
+@media (max-width: 700px) {
+	.mobile-header {
+		display: flex;
+		border-bottom: 0;
+	}
+
+	.desktop-header {
+		display: none;
+	}
+
+	.home-description h1,
+	.home-description .language-selector {
+		display: none;
+	}
+
+	.home-description .home-paragraph {
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	div.home-description {
+		padding-top: 0;
+		padding-bottom: 3rem;
+	}
+}
+
+
+.tall-image{
+	display: none;
+}
+@media (max-width: 380px) {
+	.wide-image{
+		display: none;
+	}
+	.tall-image{
+		display: inline;
+	}
+}
 
 @media (max-width: 767px) {
     .portfolio_box_1,.portfolio_box_2 {
@@ -81,24 +203,6 @@ body {
     text-align: center;
 }
 
-#page-preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100500;
-}
-
-#page-preloader .spinner {
-width: 32px;
-height: 32px;
-position: absolute;
-left: 50%;
-top: 50%;
-margin: -16px 0 0 -16px;
-}
-
 .section_1, .section_3 {
     max-width: 998px;
     margin: 0 auto;
@@ -141,6 +245,7 @@ display:flex;
 justify-content:space-between;
 list-style: none;
 margin: 0;
+padding: 0;
 }
 
 ul .navigation_point a {
