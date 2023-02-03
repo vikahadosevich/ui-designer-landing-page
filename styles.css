@@ -220,7 +220,7 @@ margin: 0px 29px;
 
 .header {
 margin: 0px 29px;
-position: fixed;
+position: sticky;
 top:0;
 left: 0;
 width: 100%;
