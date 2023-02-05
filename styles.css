@@ -78,12 +78,23 @@
 	align-items: end;
 }
 
+.logo_block_mobile {
+	font-size: 47px;
+    font-weight: 700;
+}
+
+.vertical-list {
+    flex-direction: column;
+    align-items: start;
+}
+
+
 @media (max-width: 700px) {
 	.mobile-header {
 		display: flex;
 		border-bottom: 0;
 	}
-
+	 
 	.line_navigation{
 		display: none;
 	}
@@ -123,10 +134,12 @@
     .portfolio_box_1,.portfolio_box_2 {
     margin-bottom: 133px;
     }
-    .logo_block_1 {
-    transition: all 0.3s ease 0s;
+
+	.logo_block_1 {
+		transition: all 0.3s ease 0s;
 }
 }
+
 
 @media (max-width: 465px) {
     .logo {
@@ -165,6 +178,12 @@ font: inherit;
 vertical-align: baseline;
 font-family: 'Khula', sans-serif;
 }
+
+.home {
+	max-width:998px;
+	margin: 0 auto;
+}
+
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -213,9 +232,13 @@ body {
     margin: 0 auto;
 }
 
+header, section, footer {
+	padding-left: 29px;
+	padding-right: 29px;
+ } 
+
 .body {
 font-size: 18px;
-margin: 0px 29px;
 }
 
 .header {
@@ -298,6 +321,12 @@ bottom: 35px;
 left: 30px;
 font-weight: 700;
 }
+
+@media (max-width: 700px) {
+	.logo_block_1 {
+		display:none
+	 }
+	}
 
 .ru {
 color: #828282;
