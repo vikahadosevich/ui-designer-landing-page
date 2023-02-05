@@ -2,14 +2,6 @@
 	box-sizing: border-box;
 }
 
-header,
-.content {
-	padding: 10px;
-	max-width: 960px;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .header-row {
 	position: sticky;
 	top: 0;
@@ -177,6 +169,12 @@ font-family: 'Khula', sans-serif;
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 display: block;
+}
+
+.header_menu {
+    padding: 0 29px;
+    max-width: 998px;
+    margin: 0 auto;
 }
 
 body {
