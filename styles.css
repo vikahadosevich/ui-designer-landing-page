@@ -92,10 +92,9 @@ header,
 		border-bottom: 0;
 	}
 
-	.header header_1 {
+	.desktop-header {
 		display: none;
 	}
-
 	.home-description h1,
 	.home-description .language-selector {
 		display: none;
