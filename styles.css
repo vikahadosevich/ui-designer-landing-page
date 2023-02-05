@@ -92,6 +92,10 @@ header,
 		border-bottom: 0;
 	}
 
+	.line_navigation{
+		display: none;
+	}
+
 	.desktop-header {
 		display: none;
 	}
@@ -159,7 +163,7 @@ header,
 
 
 html, body, div, span, applet, object, h1, h2, p, 
-footer, header, hgroup, menu, nav, output, 
+footer, header, hgroup, menu, output, 
 ruby, section, summary, time, mark, audio, video {
 margin: 0;
 padding: 0;
@@ -232,12 +236,6 @@ backdrop-filter: blur(40px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.header_menu{
-padding:0 29px;
-max-width: 998px;
-margin: 0 auto;
-}
-
 .navigation_list {
 display:flex;
 justify-content:space-between;
@@ -266,7 +264,6 @@ text-decoration: none;
 
 .line_navigation {
 margin-bottom: 40px;
-margin-top: 88px;
 }
 
 .logo_block_menu {
@@ -417,12 +414,14 @@ margin-bottom: 166px;
 
 .portfolio_box_3 {
 margin: 0px 29px;
+transition: all 300ms;
 }
 
 .img_portfolio {
 width: 100%;
 height: auto;
 padding-bottom: 45px;
+transition: all 300ms;
 }
 
 .portfolio_p2 {
