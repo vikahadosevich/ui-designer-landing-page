@@ -2,7 +2,7 @@
 
 Пример страницы UX | UI designer
 
-[Посмотреть на Github Page] (https://vikahadosevich.github.io/ui-designer-landing-page/)
+[Посмотреть на Github Pages](https://vikahadosevich.github.io/ui-designer-landing-page/)
 
 [![screenshot](img/screenshot.png)](https://alexklimenkov.github.io/figma-template)
 
